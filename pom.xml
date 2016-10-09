@@ -2,74 +2,46 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>be.nabu.glue</groupId>
 	<artifactId>glue-validators</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>${be.nabu.glue-glue-validators-version}</version>
 	<name>glue-validators</name>
+	
+	<parent>
+		<groupId>be.nabu</groupId>
+		<artifactId>core</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
 	<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
-				<version>2.3.7</version>
-				<extensions>true</extensions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9</version>
-				<configuration>
-					<sourceFileIncludes>
-						<include>FileMethods.java</include>
-						<include>ScriptMethods.java</include>
-						<include>StringMethods.java</include>
-						<include>SystemMethods.java</include>
-						<include>TestMethods.java</include>
-					</sourceFileIncludes>
-					<sourcepath>${basedir}/src/main/java/be/nabu/glue/impl/methods</sourcepath>
+					<source>1.6</source>
+					<target>1.6</target>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
 	<dependencies>
 		<dependency>
 			<groupId>be.nabu.glue</groupId>
 			<artifactId>glue</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>be.nabu.libs.validator</groupId>
-			<artifactId>validator-api</artifactId>
-			<version>1.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>be.nabu.libs.validator</groupId>
 			<artifactId>validator-base</artifactId>
-			<version>1.1-SNAPSHOT</version>
 		</dependency>
 
 		<!-- testing -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>be.nabu.libs.resources</groupId>
 			<artifactId>resources-classpath</artifactId>
-			<version>1.0-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>be.nabu.libs.converter</groupId>
 			<artifactId>converter-base</artifactId>
-			<version>1.1-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
