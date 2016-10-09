@@ -7,8 +7,8 @@ import java.util.List;
 import be.nabu.glue.api.Script;
 import be.nabu.glue.api.runs.CallLocation;
 import be.nabu.glue.api.runs.GlueValidation;
+import be.nabu.glue.core.impl.methods.GlueValidationImpl;
 import be.nabu.glue.impl.SimpleCallLocation;
-import be.nabu.glue.impl.methods.GlueValidationImpl;
 import be.nabu.libs.validator.api.Validator;
 import be.nabu.libs.validator.api.ValidationMessage.Severity;
 

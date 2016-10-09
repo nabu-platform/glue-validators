@@ -3,9 +3,9 @@ package be.nabu.glue.validators;
 import java.util.ArrayList;
 import java.util.List;
 
-import be.nabu.glue.ScriptRuntime;
 import be.nabu.glue.api.Script;
 import be.nabu.glue.api.ScriptRepository;
+import be.nabu.glue.utils.ScriptRuntime;
 import be.nabu.libs.evaluator.annotations.MethodProviderClass;
 import be.nabu.libs.validator.MultipleValidator;
 import be.nabu.libs.validator.api.Validation;
